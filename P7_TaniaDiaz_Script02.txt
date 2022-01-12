@@ -1,0 +1,9 @@
+﻿
+"Afficher Les membres d'un Groupe"
+
+$groupe = Read-Host "Merci de rentrer le Nom du Group à lister"
+Get-ADGroupMember "$groupe" -Recursive | Select-Object name
+
+"Membres du $groupe touve"
+
+
